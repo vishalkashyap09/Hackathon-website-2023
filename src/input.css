@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+* { 
+  outline: 1px solid red;
+  outline-offset: -1px;
+} */
+body {
+  font-family: "VT323", monospace;
+  scroll-behavior: smooth;
+}
+
+/* code pen */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* * {
+  outline: 1px solid red;
+  outline-offset: -1px;
+} */
+
+body {
+  font-family: 'VT323', monospace;
+  color: #FFFFFF;
+  background-color: #1E1E1E;
+}
+
+.headline {
+  font-size: 40px;
+  padding: 20px 8% 20px 8%;
+  white-space: nowrap;
+}
+
+.element {
+  display: flex;
+  padding: 0 10% 50px 10%;
+}
+
+.elementheading {
+  font-size: 36px;
+  margin-right: 35px;
+  white-space: nowrap;
+}
+
+.elementcontent {
+  font-size: 20px;
+  color: #D9D9D9;
+}
+
+.headingstart {
+  color: #9E9E9E;
+}
+
+.heading1 {
+  color: #CCCC6C;
+}
+
+.heading2 {
+  color: #50BE62;
+}
+
+.heading3 {
+  color: #6164AD;
+}
+
+.heading4 {
+  color: #CD3838;
+}
+
+.footer {
+  display: flex;
+  padding: 30px 10% 10px 10%;
+  gap: 12%;
+}
+
+.footerheading {
+  font-size: 24px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+
+.footercontent {
+  font-size: 20px;
+  display: flex;
+}
+
+.footerelements {
+  width: 40%;
+}
+
+.tech_logo {
+  height: 100px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.sociallogos {
+  padding: 20px;
+  padding-left: 0;
+}
+
+.twitter_logo {
+  height: 70px;
+  margin-top: 8px;
+}
+
+.addresscontent {
+  color: #D9D9D9;
+}
+
+.resourcecontent {
+  color: #9E9E9E;
+}
+
+.sponsorelement{
+  padding: 10px 10% 10px 10%;
+  width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .element {
+      flex-direction: column;
+      padding: 0 10% 50px 10%;
+  }
+
+  .Tracksheadline {
+      white-space: nowrap;
+      padding: 20px 10% 50px 6%;
+
+  }
+
+  .elementheading {
+      padding-bottom: 10px;
+  }
+
+  .footer {
+      flex-direction: column;
+  }
+
+  .tech_logo {
+      height: 100px;
+      width: 100px;
+      margin: auto;
+  }
+
+  .footerheading {
+      padding-top: 30px;
+  }
+
+  .footerelements {
+      width: 100%;
+  }
+
+  .sociallogos {
+      margin: auto;
+  }
+
+  .insta_logo {
+      padding-left: 20%;
+  }
+
+  .linkedin_logo {
+      padding-right: 20%;
+  }
+
+  .headline{
+      font-size: 30px;
+  }
+
+  .elementheading{
+      font-size: 24px;
+  }
+}
