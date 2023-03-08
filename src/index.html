@@ -20,7 +20,9 @@
     ></script>
   </head>
   <body class="bg-[#1E1E1E]">
-    <nav class="p-5 bg-[#1E1E1E] md:flex md:items-center md:justify-between">
+    <nav
+      class="p-5 bg-[#1E1E1E] md:flex md:items-center md:justify-between z-50"
+    >
       <div class="flex justify-between items-center">
         <span class="text-3xl cursor-pointer">
           <h1>
@@ -34,7 +36,7 @@
         </span>
       </div>
       <ul
-        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-100"
+        class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-100 bg-[#1E1E1E]"
       >
         <li class="mx-4 my-6 md:my-0">
           <a href="#" class="text-2xl">SCHEDULE</a>
@@ -52,7 +54,7 @@
           <a href="#" class="text-2xl">RULES & FAQ</a>
         </li>
         <button
-          class="text-[red] duration-500 px-2 py-1 mx-4 hover:bg-white hover:text-black"
+          class="text-[red] text-2xl duration-500 px-2 py-1 mx-4 hover:bg-white hover:text-black"
         >
           REGISTER
         </button>
@@ -60,15 +62,15 @@
       </ul>
     </nav>
 
-    <div class="hero flex justify-between">
+    <div class="hero flex justify-between mt-10 mx-5">
       <div class="hidden md:block">
         <img src="../assets/yellowPattern.png" alt="" />
       </div>
-      <div class="hero-text mb-20">
+      <div class="hero-text">
         <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
           $ man <span class="text-white"> status_code_0</span>
         </h1>
-        <p class="text-white w-[20rem]">
+        <p class="text-white w-auto">
           Status Code 0 is an exciting 24-hour hackathon event that brings
           together talented software developers to showcase their creativity and
           build innovative projects. Participants will have the opportunity to
@@ -79,78 +81,70 @@
           the potential to make a significant impact in the industry.
         </p>
 
-        <div class="container text-white text-center mt-10">
-          <h1 class="text-5xl" id="headline">Countdown to the main event</h1>
+        <div class="container text-white mt-5 flex items-center justify-center">
+          <h1 class="text-5xl hidden" id="headline">
+            Countdown to the main event
+          </h1>
           <div id="countdown">
-            <ul class="flex justify-between text-3xl">
-              <li><span id="days"></span>days</li>
-              <li><span id="hours"></span>Hours</li>
-              <li><span id="minutes"></span>Minutes</li>
-              <li><span id="seconds"></span>Seconds</li>
+            <ul class="flex text-4xl">
+              <li><span id="days"></span>:</li>
+              <li><span id="hours"></span>:</li>
+              <li><span id="minutes"></span>:</li>
+              <li><span id="seconds"></span></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="">
         <img
-          class="h-[12rem] w-[12rem]"
+          class="h-[12rem] w-[12rem] hidden md:block"
           src="../assets/pinkPatterm.png"
           alt=""
         />
       </div>
     </div>
-    <div class="schedule">
+    <div class="mt-10 mx-5">
       <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
         $ cat <span class="text-white">SCHEDULE</span>.txt
       </h1>
       <div class="flex justify-between">
         <div class="flex">
           <div class="ml-2 mt-6">
-            <img src="../assets/ladder.png" alt="" />
+            <img class="w-[5rem] h-[20rem]" src="../assets/ladder.png" alt="" />
           </div>
-          <div class="text-white mt-[4.8rem]">
+          <div class="text-white mt-[3.7rem]">
             <div>
-              <h1 class="text-[#CCCC6C] text-4xl">HEADING 1</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <h1 class="text-[#CCCC6C] text-3xl">HEADING 1</h1>
+              <p class="">Lorem ipsum dolor sit amet,</p>
             </div>
             <div>
-              <h1 class="text-[#50BE62] text-4xl mt-11">HEADING 2</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <h1 class="text-[#50BE62] text-3xl mt-[1.8rem]">HEADING 2</h1>
+              <p>Lorem ipsum dolor sit amet,</p>
             </div>
             <div>
-              <h1 class="text-[#6164AD] text-4xl mt-12">HEADING 3</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <h1 class="text-[#6164AD] text-3xl mt-[1.8rem]">HEADING 3</h1>
+              <p>Lorem ipsum dolor sit amet</p>
             </div>
+
             <div>
-              <h1 class="text-[#CD3838] text-4xl mt-12">HEADING 4</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <h1 class="text-[#CD3838] text-3xl mt-[1.8rem]">HEADING 4</h1>
+              <p>Lorem ipsum dolor sit amet</p>
             </div>
           </div>
         </div>
-        <div class="">
+        <div class="hidden">
           <img src="../assets/computer.png" alt="" />
         </div>
       </div>
       <!-- Tracks -->
-      <div class="headline">
-        <span class="headingstart">$ ls -a </span
-        ><span class="headingmain">TRACKS</span>
+      <div class="mt-10">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
+          $ ls -a <span class="text-white">TRACKS</span>
+        </h1>
       </div>
-      <div class="trackelements">
+      <div class="trackelements flex flex-col gap-5 mt-5">
         <div class="element">
-          <div class="elementheading heading1">Medical Track</div>
+          <div class="elementheading heading1 text-3xl">Medical Track</div>
           <div class="elementcontent">
             In this track, participants work on developing software solutions
             related to healthcare and medicine. They might build applications
@@ -159,7 +153,7 @@
           </div>
         </div>
         <div class="element">
-          <div class="elementheading heading2">Environment Track</div>
+          <div class="elementheading heading2 text-3xl">Environment Track</div>
           <div class="elementcontent">
             This track focuses on building software solutions that promote
             sustainability and protect the environment. Participants might
@@ -170,7 +164,7 @@
           </div>
         </div>
         <div class="element">
-          <div class="elementheading heading3">Wildlife Track</div>
+          <div class="elementheading heading3 text-3xl">Wildlife Track</div>
           <div class="elementcontent">
             The wildlife track encourages participants to build software
             solutions that support wildlife conservation and the preservation of
@@ -184,7 +178,9 @@
           </div>
         </div>
         <div class="element">
-          <div class="elementheading heading4">Gender Inclusivity Track</div>
+          <div class="elementheading heading4 text-3xl">
+            Gender Inclusivity Track
+          </div>
           <div class="elementcontent">
             The Gender Inclusivity Track at Status Code 0 focuses on building
             software solutions that promote gender equality and inclusiveness,
@@ -201,7 +197,7 @@
           </div>
         </div>
         <div class="element">
-          <div class="elementheading heading4">Education Track</div>
+          <div class="elementheading heading1 text-3xl">Education Track</div>
           <div class="elementcontent">
             ware solutions that promote gender equality and inclusiveness,
             addressing various issues affecting women and girls. Participants
@@ -217,7 +213,7 @@
           </div>
         </div>
         <div class="element">
-          <div class="elementheading heading4">Fintech Track</div>
+          <div class="elementheading heading2 text-3xl">Fintech Track</div>
           <div class="elementcontent">
             The Gender Inclusivity Track at Status Code 0 focuses on building
             software solutions that promote gender equality and inclusiveness,
@@ -234,7 +230,7 @@
           </div>
         </div>
         <div class="element">
-          <div class="elementheading heading4">Security Track</div>
+          <div class="elementheading heading3 text-3xl">Security Track</div>
           <div class="elementcontent">
             The Gender Inclusivity Track at Status Code 0 focuses on building
             software solutions that promote gender equality and inclusiveness,
@@ -252,8 +248,9 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between mx-5 mt-5">
       <div class="hidden md:flex md:justify-center md:items-center">
+        vi
         <img
           class="h-[8rem] md:h-[20rem]"
           src="../assets/left.png"
@@ -293,55 +290,52 @@
       </div>
     </div>
     <!-- Sponsors -->
-    <div class="sponsors">
+    <div class="sponsors mx-5 mt-10">
       <div class="headline">
-        <span class="headingstart">$ tar -xvzf </span
-        ><span class="heading main">SPONSORS</span
-        ><span class="headingstart">.tar.gz</span>
+        <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
+          $ tar -xvzf <span class="text-white"> SPONSORS</span>.tar.gz
+        </h1>
       </div>
-      <img
-        class="sponsorelement"
-        src="../assets/images/tier1.png"
-        alt="tier1"
-      />
-      <img
-        class="sponsorelement"
-        src="../assets/images/tier2.png"
-        alt="tier2"
-      />
-      <img
-        class="sponsorelement"
-        src="../assets/images/tier3.png"
-        alt="tier3"
-      />
-      <img
-        class="sponsorelement"
-        src="../assets/images/tier4.png"
-        alt="tier4"
-      />
+      <div class="images flex flex-col gap-5 mt-5">
+        <img
+          class="sponsorelement"
+          src="../assets/images/tier1.png"
+          alt="tier1"
+        />
+        <img
+          class="sponsorelement"
+          src="../assets/images/tier2.png"
+          alt="tier2"
+        />
+        <img
+          class="sponsorelement"
+          src="../assets/images/tier3.png"
+          alt="tier3"
+        />
+        <img
+          class="sponsorelement"
+          src="../assets/images/tier4.png"
+          alt="tier4"
+        />
+      </div>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-      <img
-        class="tech_logo"
-        src="../assets/images/tech_logo.png"
-        alt="tech_logo"
-      />
+    <div class="footer flex flex-col mx-5 mt-10">
       <div class="resources footerelements">
-        <div class="footerheading">RESOURCES</div>
-        <div class="footercontent resourcecontent">Sponsorship Brochure</div>
+        <div class="footerheading  text-2xl">RESOURCES</div>
+        <div class="footercontent text-xl resourcecontent cursor-pointer text-[#9E9E9E]">Sponsorship Brochure</div>
       </div>
-      <div class="address footerelements">
-        <div class="footerheading">ADDRESS</div>
-        <div class="footercontent addresscontent">
+      <div class="address footerelements mt-5">
+        <div class="footerheading text-2xl">ADDRESS</div>
+        <div class="footercontent  text-xl addresscontent">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
       </div>
-      <div class="social">
-        <div class="footerheading footerelements">STAY CONNECTED</div>
-        <div class="footercontent">
+      <div class="social mt-5">
+        <div class="footerheading footerelements  text-2xl">STAY CONNECTED</div>
+        <div class="flex gap-10 mt-5">
           <img
             class="sociallogos insta_logo"
             src="../assets/images/insta_logo.png"
@@ -360,7 +354,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright">© 2023 Tech Club IIIT Kalyani</div>
+    <div class="copyright text-center pb-10 text-xl mt-5">© 2023 Tech Club IIIT Kalyani</div>
     <script src="./index.js"></script>
     <script>
       function Menu(e) {
