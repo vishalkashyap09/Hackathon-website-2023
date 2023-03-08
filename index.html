@@ -21,7 +21,7 @@
   </head>
   <body class="bg-[#1E1E1E]">
     <nav
-      class="p-5 bg-[#1E1E1E] md:flex md:items-center md:justify-between z-50"
+      class="p-5 bg-[#1E1E1E] md:flex md:items-center md:justify-between z-50 md:mx-16"
     >
       <div class="flex justify-between items-center">
         <span class="text-3xl cursor-pointer">
@@ -62,15 +62,15 @@
       </ul>
     </nav>
 
-    <div class="hero flex justify-between mt-10 mx-5">
-      <div class="hidden md:block">
+    <div class="hero flex justify-around mt-10 md:mt-16 mx-5 md:mx-16">
+      <div class="hidden md:flex md:items-center md:justify-center">
         <img src="./assets/yellowPattern.png" alt="" />
       </div>
       <div class="hero-text">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
           $ man <span class="text-white"> status_code_0</span>
         </h1>
-        <p class="text-white w-auto">
+        <p class="text-[#9E9E9E] text-2xl w-auto md:w-[30rem]">
           Status Code 0 is an exciting 24-hour hackathon event that brings
           together talented software developers to showcase their creativity and
           build innovative projects. Participants will have the opportunity to
@@ -95,66 +95,89 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="hidden md:flex md:items-center md:justify-center">
         <img
-          class="h-[12rem] w-[12rem] hidden md:block"
+          class="h-[12rem] w-[12rem]"
           src="./assets/pinkPatterm.png"
           alt=""
         />
       </div>
     </div>
-    <div class="mt-10 mx-5">
-      <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
+    <div class="mt-10 mx-5 md:mx-10">
+      <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
         $ cat <span class="text-white">SCHEDULE</span>.txt
       </h1>
-      <div class="flex justify-between">
+      <div class="flex sdfkasd gap-[50rem]">
         <div class="flex">
           <div class="ml-2 mt-6">
-            <img class="w-[5rem] h-[20rem]" src="./assets/ladder.png" alt="" />
+            <img
+              class="w-[5rem] h-[20rem] md:w-[10rem] md:h-[25rem]"
+              src="./assets/ladder.png"
+              alt=""
+            />
           </div>
-          <div class="text-white mt-[3.7rem]">
+          <div class="text-white mt-[3.7rem] md:mt-[4.3rem]">
             <div>
-              <h1 class="text-[#CCCC6C] text-3xl">HEADING 1</h1>
+              <h1 class="text-[#CCCC6C] text-3xl md:text-5xl">HEADING 1</h1>
               <p class="">Lorem ipsum dolor sit amet,</p>
             </div>
             <div>
-              <h1 class="text-[#50BE62] text-3xl mt-[1.8rem]">HEADING 2</h1>
+              <h1
+                class="text-[#50BE62] text-3xl md:text-5xl mt-[1.8rem] md:mt-[2.3rem]"
+              >
+                HEADING 2
+              </h1>
               <p>Lorem ipsum dolor sit amet,</p>
             </div>
             <div>
-              <h1 class="text-[#6164AD] text-3xl mt-[1.8rem]">HEADING 3</h1>
+              <h1
+                class="text-[#6164AD] text-3xl mt-[1.8rem] md:text-5xl md:mt-[2.3rem]"
+              >
+                HEADING 3
+              </h1>
               <p>Lorem ipsum dolor sit amet</p>
             </div>
 
             <div>
-              <h1 class="text-[#CD3838] text-3xl mt-[1.8rem]">HEADING 4</h1>
+              <h1
+                class="text-[#CD3838] text-3xl mt-[1.8rem] md:text-5xl md:mt-[2.3rem]"
+              >
+                HEADING 4
+              </h1>
               <p>Lorem ipsum dolor sit amet</p>
             </div>
           </div>
         </div>
-        <div class="hidden">
+        <div class="hidden md:flex md:justify-center md:items-center">
           <img src="./assets/computer.png" alt="" />
         </div>
       </div>
       <!-- Tracks -->
       <div class="mt-10">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
           $ ls -a <span class="text-white">TRACKS</span>
         </h1>
       </div>
+      <!-- here -->
       <div class="trackelements flex flex-col gap-5 mt-5">
-        <div class="element">
-          <div class="elementheading heading1 text-3xl">Medical Track</div>
-          <div class="elementcontent">
+        <div class="element gap-16 flex flex-col md:flex-row md:justify-end">
+          <div class="elementheading heading1 text-3xl md:text-4xl">
+            <h1 class="text-3xl md:text-4xl md:w-[10rem]">Medical Track</h1>
+          </div>
+          <div class="elementcontent md:text-xl">
             In this track, participants work on developing software solutions
             related to healthcare and medicine. They might build applications
             that help patients manage their health, or tools that assist
             healthcare providers in diagnosing and treating patients.
           </div>
         </div>
-        <div class="element">
-          <div class="elementheading heading2 text-3xl">Environment Track</div>
-          <div class="elementcontent">
+        <div class="element gap-16 flex flex-col md:flex-row md:justify-end">
+          <div
+            class="elementheading heading2 text-3xl md:text-4xl md:w-[12rem]"
+          >
+            <h1 class="text-3xl md:text-4xl md:w-[10rem]">Environment Track</h1>
+          </div>
+          <div class="elementcontent md:text-xl">
             This track focuses on building software solutions that promote
             sustainability and protect the environment. Participants might
             create applications that help reduce waste, conserve energy, monitor
@@ -163,9 +186,13 @@
             solutions that contribute to a cleaner and more sustainable future.
           </div>
         </div>
-        <div class="element">
-          <div class="elementheading heading3 text-3xl">Wildlife Track</div>
-          <div class="elementcontent">
+        <div class="element gap-16 flex flex-col md:flex-row">
+          <div class="elementheading heading3 md:w-[12rem]">
+            <h1 class="text-3xl md:text-4xl md:w-[10rem]">Wildlife Track</h1>
+          </div>
+          <div
+            class="elementcontent flex items-center md:justify-end md:text-xl"
+          >
             The wildlife track encourages participants to build software
             solutions that support wildlife conservation and the preservation of
             biodiversity. Participants might develop applications that help
@@ -177,11 +204,13 @@
             protect wildlife from harm.
           </div>
         </div>
-        <div class="element">
-          <div class="elementheading heading4 text-3xl">
-            Gender Inclusivity Track
+        <div class="element gap-16 flex flex-col md:flex-row">
+          <div class="elementheading heading4 text-3xl md:text-4xl">
+            <h1 class="text-3xl md:text-4xl md:w-[10rem]">Gender Inclusivity Track</h1>
           </div>
-          <div class="elementcontent">
+          <div
+            class="elementcontent flex items-center justify-center md:text-xl"
+          >
             The Gender Inclusivity Track at Status Code 0 focuses on building
             software solutions that promote gender equality and inclusiveness,
             addressing various issues affecting women and girls. Participants
@@ -196,9 +225,13 @@
             inclusive society, free from all forms of discrimination and bias.
           </div>
         </div>
-        <div class="element">
-          <div class="elementheading heading1 text-3xl">Education Track</div>
-          <div class="elementcontent">
+        <div class="element gap-16 flex flex-col md:flex-row">
+          <div class="elementheading heading1 text-3xl md:text-4xl">
+            <h1 class="text-3xl md:text-4xl md:w-[10rem]">Medical Track</h1>
+          </div>
+          <div
+            class="elementcontent flex items-center justify-center md:text-xl"
+          >
             ware solutions that promote gender equality and inclusiveness,
             addressing various issues affecting women and girls. Participants
             are encouraged to create applications that combat gender-based
@@ -212,9 +245,13 @@
             inclusive society, free from all forms of discrimination and bias.
           </div>
         </div>
-        <div class="element">
-          <div class="elementheading heading2 text-3xl">Fintech Track</div>
-          <div class="elementcontent">
+        <div class="element gap-16 flex flex-col md:flex-row">
+          <div class="elementheading heading2 text-3xl md:text-4xl">
+            <h1 class="text-3xl md:text-4xl md:w-[10rem]">Fintech Track</h1>
+          </div>
+          <div
+            class="elementcontent flex items-center justify-center md:text-xl"
+          >
             The Gender Inclusivity Track at Status Code 0 focuses on building
             software solutions that promote gender equality and inclusiveness,
             addressing various issues affecting women and girls. Participants
@@ -229,9 +266,13 @@
             inclusive society, free from all forms of discrimination and bias.
           </div>
         </div>
-        <div class="element">
-          <div class="elementheading heading3 text-3xl">Security Track</div>
-          <div class="elementcontent">
+        <div class="element gap-16 flex flex-col md:flex-row ">
+          <div class="elementheading heading3 text-3xl md:text-4xl">
+            <h1 class="text-3xl md:text-4xl md:w-[10rem]">Security Track</h1>
+          </div>
+          <div
+            class="elementcontent flex items-center justify-center md:text-xl"
+          >
             The Gender Inclusivity Track at Status Code 0 focuses on building
             software solutions that promote gender equality and inclusiveness,
             addressing various issues affecting women and girls. Participants
@@ -248,9 +289,8 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-between mx-5 mt-5">
+    <div class="flex justify-between mx-5 md:mx-10 mt-5 md:mt-10">
       <div class="hidden md:flex md:justify-center md:items-center">
-        vi
         <img
           class="h-[8rem] md:h-[20rem]"
           src="./assets/left.png"
@@ -258,10 +298,10 @@
         />
       </div>
       <div class="prize">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
           $ vi <span class="text-white">PRIZE</span>.yml
         </h1>
-        <div class="text-white text-[1.4rem] md:text-2xl mt-5">
+        <div class="text-white text-[1.4rem] md:text-3xl mt-5">
           <h2>
             &nbsp;1 <span class="text-[#CD3838]">Overall:</span> <br />
             &nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
@@ -281,7 +321,7 @@
           </h2>
         </div>
       </div>
-      <div class="flex justify-center items-center hidden md:block">
+      <div class="md:flex justify-center items-center hidden">
         <img
           class="h-[10rem] md:h-[20rem]"
           src="./assets/right.png"
@@ -289,14 +329,33 @@
         />
       </div>
     </div>
-    <!-- Sponsors -->
-    <div class="sponsors mx-5 mt-10">
+    <div class="faq mx-5 mt-10">
       <div class="headline">
         <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
+          $ tar -xvzf <span class="text-white"> FAQ</span>.tar.gz
+        </h1>
+      <div class="faq-question text-2xl font-bold mb-2">What is Status Code 0?</div>
+      <div class="faq-answer text-xl">Status Code 0 is an offline hackathon for developers and tech enthusiasts to come together and build innovative solutions to real-world problems.</div>
+      <div class="faq-question text-2xl font-bold mt-5 mb-2">When and where will Status Code 0 take place?</div>
+      <div class="faq-answer text-xl">The date and location for Status Code 0 will be announced soon. Stay tuned for updates!</div>
+      <div class="faq-question text-2xl font-bold mt-5 mb-2">Who can participate in Status Code 0?</div>
+      <div class="faq-answer text-xl">Status Code 0 is open to anyone with an interest in technology and a passion for problem-solving. Whether you're a student, a professional developer, or just someone who loves to tinker with code, we welcome you to join us!</div>
+      <div class="faq-question text-2xl font-bold mt-5 mb-2">What kind of challenges will participants tackle at Status Code 0?</div>
+      <div class="faq-answer text-xl">Participants at Status Code 0 will work on challenges related to real-world problems in areas such as healthcare, education, sustainability, and more. Stay tuned for updates on the specific challenges we'll be tackling at this year's hackathon!</div>
+      <div class="faq-question text-2xl font-bold mt-5 mb-2">What should I bring to Status Code 0?</div>
+      <div class="faq-answer text-xl">We recommend that you bring your own laptop and any other equipment or tools you'll need to work on your project. We'll provide food, drinks, and any necessary materials for the challenges.</div>
+      <div class="faq-question text-2xl font-bold mt-5 mb-2">What kind of prizes can participants win at Status Code 0?</div>
+      <div class="faq-answer text-xl">We'll be offering a range of prizes for participants at Status Code 0, including cash prizes, tech gadgets, and more. Stay tuned for updates on the specific prizes we'll be offering!</div>
+    </div>
+
+    <!-- Sponsors -->
+    <div class="sponsors mx-5 md:mx-10 mt-10">
+      <div class="headline">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
           $ tar -xvzf <span class="text-white"> SPONSORS</span>.tar.gz
         </h1>
       </div>
-      <div class="images flex flex-col gap-5 mt-5">
+      <div class="images flex flex-col gap-5 md:gap-10 mt-5 md:mx-16">
         <img
           class="sponsorelement"
           src="./assets/images/tier1.png"
@@ -320,40 +379,29 @@
       </div>
     </div>
 
-    <div class="faq mx-5 mt-10">
-      <div class="headline">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-6xl">
-          $ tar -xvzf <span class="text-white"> FAQ</span>.tar.gz
-        </h1>
-      <div class="faq-question text-2xl font-bold mb-2">What is Status Code 0?</div>
-      <div class="faq-answer text-xl">Status Code 0 is an offline hackathon for developers and tech enthusiasts to come together and build innovative solutions to real-world problems.</div>
-      <div class="faq-question text-2xl font-bold mt-5 mb-2">When and where will Status Code 0 take place?</div>
-      <div class="faq-answer text-xl">The date and location for Status Code 0 will be announced soon. Stay tuned for updates!</div>
-      <div class="faq-question text-2xl font-bold mt-5 mb-2">Who can participate in Status Code 0?</div>
-      <div class="faq-answer text-xl">Status Code 0 is open to anyone with an interest in technology and a passion for problem-solving. Whether you're a student, a professional developer, or just someone who loves to tinker with code, we welcome you to join us!</div>
-      <div class="faq-question text-2xl font-bold mt-5 mb-2">What kind of challenges will participants tackle at Status Code 0?</div>
-      <div class="faq-answer text-xl">Participants at Status Code 0 will work on challenges related to real-world problems in areas such as healthcare, education, sustainability, and more. Stay tuned for updates on the specific challenges we'll be tackling at this year's hackathon!</div>
-      <div class="faq-question text-2xl font-bold mt-5 mb-2">What should I bring to Status Code 0?</div>
-      <div class="faq-answer text-xl">We recommend that you bring your own laptop and any other equipment or tools you'll need to work on your project. We'll provide food, drinks, and any necessary materials for the challenges.</div>
-      <div class="faq-question text-2xl font-bold mt-5 mb-2">What kind of prizes can participants win at Status Code 0?</div>
-      <div class="faq-answer text-xl">We'll be offering a range of prizes for participants at Status Code 0, including cash prizes, tech gadgets, and more. Stay tuned for updates on the specific prizes we'll be offering!</div>
-    </div>
-
     <!-- Footer -->
-    <div class="footer flex flex-col mx-5 mt-10">
+    <div
+      class="footer flex flex-col mx-5 mt-10 md:flex-row md:items-center md:justify-between md:mx-20"
+    >
       <div class="resources footerelements">
-        <div class="footerheading  text-2xl">RESOURCES</div>
-        <div class="footercontent text-xl resourcecontent cursor-pointer text-[#9E9E9E]">Sponsorship Brochure</div>
+        <div class="footerheading text-2xl md:text-4xl">RESOURCES</div>
+        <div
+          class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#9E9E9E]"
+        >
+          Sponsorship Brochure
+        </div>
       </div>
-      <div class="address footerelements mt-5">
-        <div class="footerheading text-2xl">ADDRESS</div>
-        <div class="footercontent  text-xl addresscontent">
+      <div class="address footerelements">
+        <div class="footerheading text-2xl md:text-4xl">ADDRESS</div>
+        <div class="footercontent text-xl md:text-2xl addresscontent">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
       </div>
       <div class="social mt-5">
-        <div class="footerheading footerelements  text-2xl">STAY CONNECTED</div>
+        <div class="footerheading footerelements text-2xl md:text-4xl">
+          STAY CONNECTED
+        </div>
         <div class="flex gap-10 mt-5">
           <img
             class="sociallogos insta_logo"
@@ -373,7 +421,9 @@
         </div>
       </div>
     </div>
-    <div class="copyright text-center pb-10 text-xl mt-5">© 2023 Tech Club IIIT Kalyani</div>
+    <div class="copyright text-center pb-10 text-xl mt-5">
+      © 2023 Tech Club IIIT Kalyani
+    </div>
     <script src="./index.js"></script>
     <script>
       function Menu(e) {
