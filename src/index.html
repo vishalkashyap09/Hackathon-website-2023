@@ -22,7 +22,7 @@
   </head>
   <body class="bg-[#1E1E1E]">
     <nav
-      class="p-5 bg-[#1E1E1E] xl:flex xl:items-center xl:justify-between z-50 xl:mx-16"
+      class="py-5 bg-[#1E1E1E] xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5"
     >
       <div class="flex justify-between items-center">
         <span class=" text-4xl md:text-5xl xl:text-5xl cursor-pointer">
@@ -62,16 +62,13 @@
       </ul>
     </nav>
 
-    <div class="hero flex justify-around mt-10 md:mt-16 mx-5 md:mx-16">
-      <div class="hidden md:flex md:items-center md:justify-center">
-        <img src="../assets/yellowPattern.png" alt="" />
-      </div>
-      <div class="hero-text">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
+    <div class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] xl:gap-[33rem] mx-5 xl:mx-16 md:h-[60vh] xl:h-[90vh]">
+      <div class="hero-text ">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl tracking-wider">
           $ man <span class="text-white"> status_code_0</span>
         </h1>
-        <p class="text-[#9E9E9E] text-2xl w-auto md:w-[30rem]">
-          Status Code 0 is an exciting 24-hour hackathon event that brings
+        <p class="text-[#D9D9D9] xl:text-3xl mt-10 w-full md:w-[100%] xl:w-[120%]">
+          Status Code 0 is an exciting 36-hour hackathon event that brings
           together talented software developers to showcase their creativity and
           build innovative projects. Participants will have the opportunity to
           compete in a variety of categories or tracks, demonstrating their
@@ -81,27 +78,37 @@
           the potential to make a significant impact in the industry.
         </p>
 
-        <div class="container text-white mt-5 flex items-center justify-center">
+        <div class="container text-[red] my-12 flex items-center justify-center">
           <h1 class="text-5xl hidden" id="headline">
             Countdown to the main event
           </h1>
-          <div id="countdown">
-            <ul class="flex text-4xl">
-              <li><span id="days"></span>:</li>
-              <li><span id="hours"></span>:</li>
-              <li><span id="minutes"></span>:</li>
+          <div id="countdown ">
+            <ul class="flex justify-around text-4xl md:text-4xl lg:text-5xl xl:text-6xl ">
+              <li><span id="days"></span></li>
+              <li><span id=""></span>:</li>
+              <li><span id="hours"></span></li>
+              <li><span id=""></span>:</li>
+              <li><span id="minutes"></span></li>
+              <li><span id=""></span>:</li>
               <li><span id="seconds"></span></li>
+            </ul>
+            <ul class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl  text-[#D9D9D9]">
+              <li><span id=""></span>days</li>
+              <li><span id=""></span>:</li>
+              <li><span class="" id=""></span> hrs</li>
+              <li><span id=""></span>:</li>
+              <li><span id=""></span> min</li>
+              <li><span id=""></span>:</li>
+              <li><span id=""></span>sec</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="hidden md:flex md:items-center md:justify-center">
-        <img
-          class="h-[12rem] w-[12rem]"
-          src="../assets/pinkPatterm.png"
-          alt=""
-        />
-      </div>
+      <img
+        class="md:h-[30vh] lg:h-[40vh] xl:h-[60vh] hidden md:block"
+        src="../assets/mascot.gif"
+        alt=""
+      />
     </div>
     <div class="mt-10 mx-5 md:mx-10">
       <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
