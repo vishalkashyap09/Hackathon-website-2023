@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -69,7 +70,7 @@
       </div>
       <div class="hero-text">
         <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
-          $ man <span class="text-white"> status_code_0</span>
+          $ man <span class="text-white" id="element"></span>
         </h1>
         <p class="text-[#9E9E9E] text-2xl w-auto md:w-[30rem]">
           Status Code 0 is an exciting 24-hour hackathon event that brings
@@ -448,11 +449,15 @@
           />
         </div>
       </div>
+      </div>
     </div>
     <div class="copyright text-center pb-10 text-xl mt-5">
       © 2023 Tech Club IIIT Kalyani
     </div>
+    
     <script src="./index.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.typetype.js"></script>
     <script>
       function Menu(e) {
         let list = document.querySelector("ul");

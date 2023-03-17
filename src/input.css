@@ -108,16 +108,19 @@ body {
   color: #fff;
 }
 
-.faq-collapsible::after {
+.faq-collapsible::before {
   content: '[+]';
   color: #E5B567;
   font-weight: 400;
   padding-right: 1em;
+  /* transform: all -1ms ease-out; */
 }
 
 .active::after {
   content: '[-]';
   color: #169B81;
+  transform: all 0ms ease-out;
+
 }
 
 .faq-content {
@@ -126,8 +129,9 @@ body {
   text-align: justify;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.5s ease-in;
+  transition: max-height -2ms ease-out;
 }
+
 
 @media screen and (max-width: 767px) {
   .faq-title{
