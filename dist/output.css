@@ -559,10 +559,6 @@ video {
   left: 0px;
 }
 
-.left-\[5rem\] {
-  left: 5rem;
-}
-
 .left-\[6rem\] {
   left: 6rem;
 }
@@ -575,16 +571,8 @@ video {
   top: 12.8rem;
 }
 
-.top-\[16\.4rem\] {
-  top: 16.4rem;
-}
-
 .top-\[20\.5rem\] {
   top: 20.5rem;
-}
-
-.top-\[23\.1rem\] {
-  top: 23.1rem;
 }
 
 .top-\[28\.7rem\] {
@@ -593,10 +581,6 @@ video {
 
 .top-\[36rem\] {
   top: 36rem;
-}
-
-.top-\[3rem\] {
-  top: 3rem;
 }
 
 .top-\[44rem\] {
@@ -619,10 +603,6 @@ video {
   top: 80px;
 }
 
-.top-\[9\.7rem\] {
-  top: 9.7rem;
-}
-
 .z-50 {
   z-index: 50;
 }
@@ -642,19 +622,24 @@ video {
   margin-right: 1.25rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mb-\[10rem\] {
@@ -699,6 +684,18 @@ video {
 
 .h-\[8rem\] {
   height: 8rem;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .w-\[90vw\] {
@@ -797,6 +794,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-\[3\.5rem\] {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .pl-7 {
@@ -1165,6 +1167,11 @@ body {
   .xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .xl\:py-\[10rem\] {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .xl\:pl-0 {
