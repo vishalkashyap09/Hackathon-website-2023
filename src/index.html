@@ -20,12 +20,12 @@
     ></script>
     <title>Status Code 0 | IIIT Kalyani</title>
   </head>
-  <body class="bg-[#1E1E1E]">
+  <body class="bg-[#1E1E1E]  scroll-smooth">
     <nav
       class="py-5 bg-[#1E1E1E] xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5"
     >
       <div class="flex justify-between items-center">
-        <span class="text-4xl md:text-5xl xl:text-5xl cursor-pointer">
+        <span class="text-3xl md:text-5xl xl:text-5xl cursor-pointer">
           <h1>
             > STATUS CODE
             <span style="color: red">0</span>
@@ -44,19 +44,19 @@
         class="xl:flex xl:items-center xl:z-auto xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 xl:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300 bg-[#1E1E1E] text-[#BABABA]"
       >
         <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#" class="text-3xl md:text-4xl">SCHEDULE</a>
+          <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
         </li>
         <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#" class="text-3xl md:text-4xl">TRACKS</a>
+          <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
         </li>
         <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#" class="text-3xl md:text-4xl">PRIZE</a>
+          <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
         </li>
         <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#" class="text-3xl md:text-4xl">SPONSORS</a>
+          <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
         </li>
         <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#" class="text-3xl md:text-4xl">RULES & FAQ</a>
+          <a href="#rules" class="text-3xl 2xl:text-4xl">RULES & FAQ</a>
         </li>
         <button
           class="text-[red] text-3xl md:text-4xl duration-500 px-2 py-1 mx-4 hover:bg-white hover:text-black"
@@ -67,7 +67,7 @@
     </nav>
 
     <div
-      class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] xl:gap-[33rem] mx-5 xl:mx-16 md:h-[60vh] xl:h-[90vh]"
+      class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] 2xl:gap-[33rem] mx-5 xl:mx-16 md:h-[60vh] xl:h-[90vh]"
     >
       <div class="hero-text">
         <h1
@@ -76,7 +76,7 @@
           $ man <span class="text-white"> status_code_0</span>
         </h1>
         <p
-          class="text-[#D9D9D9] xl:text-3xl mt-10 w-full md:w-[100%] xl:w-[120%]"
+          class="text-[#D9D9D9] lg:text-sm xl:text-xl mt-10 w-full md:w-[100%] 2xl:w-[120%]"
         >
           Status Code 0 is an exciting 36-hour hackathon event that brings
           together talented software developers to showcase their creativity and
@@ -119,18 +119,18 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div>  
       <img
-        class="md:h-[30vh] lg:h-[40vh] xl:h-[60vh] hidden md:block"
+        class="md:h-[30vh] xl:h-[40vh] 2xl:h-[60vh] hidden md:block"
         src="../assets/mascot.gif"
         alt=""
       />
     </div>
-    <div class="mt-10 mx-5 xl:mx-16">
+    <div id="schedule" class="mt-10 mx-5 xl:mx-16">
       <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
         $ cat <span class="text-white">SCHEDULE</span>.txt
       </h1>
-      <div class="flex flex-col xl:flex-row xl:gap-[30rem]">
+      <div class="flex flex-col xl:flex-row xl:gap-[20rem] 2xl:gap-[30rem]">
         <div class="relative mb-[10rem] w-[90vw] xl:w-[30vw]">
           <img
             class="mt-5 h-[30rem] w-auto relative hidden xl:block"
@@ -209,7 +209,7 @@
       </div>
     </div>
     <!-- Tracks -->
-    <div class="mt-10 mx-5 md:mx-10">
+    <div id="tracks" class="mt-10 mx-5 md:mx-10">
       <div class="">
         <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
           $ ls -a <span class="text-white">TRACKS</span>
@@ -348,7 +348,7 @@
         </div>
       </div>
     </div>
-    <div class="mx-5 md:mx-10 mt-5 md:mt-10">
+    <div id="prize" class="mx-5 md:mx-10 mt-5 md:mt-10">
       <div class="hidden md:justify-center md:items-center">
         <img
           class="h-[8rem] md:h-[20rem]"
@@ -390,7 +390,7 @@
       </div>
     </div>
     <!-- Sponsors -->
-    <div class="sponsors mx-5 md:mx-10 my-10">
+    <div id="sponsers" class="sponsors mx-5 md:mx-10 my-10">
       <div class="headline">
         <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
           $ tar -xvzf <span class="text-white"> SPONSORS</span>.tar.gz
@@ -428,10 +428,10 @@
     </div>
 
     <!-- Footer -->
-    <div
-      class="bg-[url('/assets/footer.png')] bg-cover h-[50vh] xl:h-[30vh] footer px-5 xl:px-10"
+    <div id="rules"
+      class="bg-[url('/assets/footer.png')] bg-cover h-[65vh] xl:h-[30vh] footer  px-5 xl:px-10"
     >
-    <div class=" flex flex-col  justify-center h-[100%] gap-5">
+    <div class=" flex flex-col  justify-center py-20 h-[100%] xl:h-[100%] gap-5">
       <div class="flex flex-col xl:flex-row justify-between gap-5">
         <div class="resources footerelements">
           <h1 class="footerheading text-2xl md:text-4xl">RESOURCES</h1>
