@@ -21,31 +21,28 @@
   //end
 
   const countDown = new Date(birthday).getTime(),
-    x = setInterval(function () {
-      const now = new Date().getTime(),
-        distance = countDown - now;
+  
+      x = setInterval(function() {    
 
-      (document.getElementById("days").innerText = Math.floor(distance / day)),
-        (document.getElementById("hours").innerText = Math.floor(
-          (distance % day) / hour
-        )),
-        (document.getElementById("minutes").innerText = Math.floor(
-          (distance % hour) / minute
-        )),
-        (document.getElementById("seconds").innerText = Math.floor(
-          (distance % minute) / second
-        ));
+        const now = new Date().getTime(),
+              distance = countDown - now;
 
-      //do something later when date is reached
-      if (distance < 0) {
-        document.getElementById("headline").innerText = "It's my birthday!";
-        document.getElementById("countdown").style.display = "none";
-        document.getElementById("content").style.display = "block";
-        clearInterval(x);
-      }
-      //seconds
-    }, 0);
-})();
+        // modified lines to print 2 digits with 0 appended at the start
+        document.getElementById("days").innerText = String(Math.floor(distance / (day))).padStart(2, "0");
+        document.getElementById("hours").innerText = String(Math.floor((distance % (day)) / (hour))).padStart(2, "0");
+        document.getElementById("minutes").innerText = String(Math.floor((distance % (hour)) / (minute))).padStart(2, "0");
+        document.getElementById("seconds").innerText = String(Math.floor((distance % (minute)) / second)).padStart(2, "0");
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
 
 //status_code_0 animation
 new TypeIt("#element", { 
@@ -114,3 +111,4 @@ new TypeIt("#element", {
 
   
 // }
+

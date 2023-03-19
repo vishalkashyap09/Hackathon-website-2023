@@ -23,57 +23,64 @@
   </head>
   <body class="bg-[#1E1E1E]">
     <nav
-      class="p-5 bg-[#1E1E1E] md:flex md:items-center md:justify-between z-50 md:mx-16"
+      class="py-5 bg-[#1E1E1E] xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5"
     >
       <div class="flex justify-between items-center">
-        <span class="text-3xl cursor-pointer">
+        <span class="text-4xl md:text-5xl xl:text-5xl cursor-pointer">
           <h1>
             > STATUS CODE
             <span style="color: red">0</span>
           </h1>
         </span>
 
-        <span id="check" class="text-3xl cursor-pointer mx-2 md:hidden block">
-          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        <span id="check" class="cursor-pointer mx-2 xl:hidden block">
+          <ion-icon
+            class="text-3xl md:text-5xl"
+            name="menu"
+            onclick="Menu(this)"
+          ></ion-icon>
         </span>
       </div>
       <ul
-        class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-100 bg-[#1E1E1E]"
+        class="xl:flex xl:items-center xl:z-auto xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 xl:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300 bg-[#1E1E1E] text-[#BABABA]"
       >
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-2xl">SCHEDULE</a>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#" class="text-3xl md:text-4xl">SCHEDULE</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-2xl">TRACKS</a>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#" class="text-3xl md:text-4xl">TRACKS</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-2xl">PRIZE</a>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#" class="text-3xl md:text-4xl">PRIZE</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-2xl">SPONSORS</a>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#" class="text-3xl md:text-4xl">SPONSORS</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-2xl">RULES & FAQ</a>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#" class="text-3xl md:text-4xl">RULES & FAQ</a>
         </li>
         <button
-          class="text-[red] text-2xl duration-500 px-2 py-1 mx-4 hover:bg-white hover:text-black"
+          class="text-[red] text-3xl md:text-4xl duration-500 px-2 py-1 mx-4 hover:bg-white hover:text-black"
         >
           REGISTER
         </button>
-        <h2 class=""></h2>
       </ul>
     </nav>
 
-    <div class="hero flex justify-around mt-10 md:mt-16 mx-5 md:mx-16">
-      <div class="hidden md:flex md:items-center md:justify-center">
-        <img src="../assets/yellowPattern.png" alt="" />
-      </div>
+    <div
+      class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] xl:gap-[33rem] mx-5 xl:mx-16 md:h-[60vh] xl:h-[90vh]"
+    >
       <div class="hero-text">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
-          $ man <span class="text-white" id="element"></span>
+        <h1
+          class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl tracking-wider"
+        >
+          $ man <span class="text-white"> status_code_0</span>
+
         </h1>
-        <p class="text-[#9E9E9E] text-2xl w-auto md:w-[30rem]">
-          Status Code 0 is an exciting 24-hour hackathon event that brings
+        <p
+          class="text-[#D9D9D9] xl:text-3xl mt-10 w-full md:w-[100%] xl:w-[120%]"
+        >
+          Status Code 0 is an exciting 36-hour hackathon event that brings
           together talented software developers to showcase their creativity and
           build innovative projects. Participants will have the opportunity to
           compete in a variety of categories or tracks, demonstrating their
@@ -83,80 +90,130 @@
           the potential to make a significant impact in the industry.
         </p>
 
-        <div class="container text-white mt-5 flex items-center justify-center">
+        <div
+          class="container text-[red] my-12 flex items-center justify-center"
+        >
           <h1 class="text-5xl hidden" id="headline">
             Countdown to the main event
           </h1>
-          <div id="countdown">
-            <ul class="flex text-4xl">
-              <li><span id="days"></span>:</li>
-              <li><span id="hours"></span>:</li>
-              <li><span id="minutes"></span>:</li>
+          <div id="countdown ">
+            <ul
+              class="flex justify-around text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
+            >
+              <li><span id="days"></span></li>
+              <li><span id=""></span>:</li>
+              <li><span id="hours"></span></li>
+              <li><span id=""></span>:</li>
+              <li><span id="minutes"></span></li>
+              <li><span id=""></span>:</li>
               <li><span id="seconds"></span></li>
+            </ul>
+            <ul
+              class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-[#D9D9D9]"
+            >
+              <li><span id=""></span>days</li>
+              <li><span id=""></span>:</li>
+              <li><span class="" id=""></span> hrs</li>
+              <li><span id=""></span>:</li>
+              <li><span id=""></span> min</li>
+              <li><span id=""></span>:</li>
+              <li><span id=""></span>sec</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="hidden md:flex md:items-center md:justify-center">
-        <img
-          class="h-[12rem] w-[12rem]"
-          src="../assets/pinkPatterm.png"
-          alt=""
-        />
-      </div>
+      <img
+        class="md:h-[30vh] lg:h-[40vh] xl:h-[60vh] hidden md:block"
+        src="../assets/mascot.gif"
+        alt=""
+      />
     </div>
-    <div class="mt-10 mx-5 md:mx-10">
-      <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
+    <div class="mt-10 mx-5 xl:mx-16">
+      <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
         $ cat <span class="text-white">SCHEDULE</span>.txt
       </h1>
-      <div class="flex sdfkasd gap-[50rem]">
-        <div class="flex">
-          <div class="ml-2 mt-6">
-            <img
-              class="w-[5rem] h-[20rem] md:w-[10rem] md:h-[25rem]"
-              src="../assets/ladder.png"
-              alt=""
-            />
+      <div class="flex flex-col xl:flex-row xl:gap-[30rem]">
+        <div class="relative mb-[10rem] w-[90vw] xl:w-[30vw]">
+          <img
+            class="mt-5 h-[30rem] w-auto relative hidden xl:block"
+            src="../assets/ladder.png"
+            alt=""
+          />
+          <img
+            class="mt-5 h-[60rem] w-auto relative xl:hidden"
+            src="../assets/laddermobile.png"
+            alt=""
+          />
+          <div class="absolute top-[5rem] xl:top-[4.5rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-6xl heading1">Heading 1</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
           </div>
-          <div class="text-white mt-[3.7rem] md:mt-[4.3rem]">
-            <div>
-              <h1 class="text-[#CCCC6C] text-3xl md:text-5xl">HEADING 1</h1>
-              <p class="">Lorem ipsum dolor sit amet,</p>
-            </div>
-            <div>
-              <h1
-                class="text-[#50BE62] text-3xl md:text-5xl mt-[1.8rem] md:mt-[2.3rem]"
-              >
-                HEADING 2
-              </h1>
-              <p>Lorem ipsum dolor sit amet,</p>
-            </div>
-            <div>
-              <h1
-                class="text-[#6164AD] text-3xl mt-[1.8rem] md:text-5xl md:mt-[2.3rem]"
-              >
-                HEADING 3
-              </h1>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-
-            <div>
-              <h1
-                class="text-[#CD3838] text-3xl mt-[1.8rem] md:text-5xl md:mt-[2.3rem]"
-              >
-                HEADING 4
-              </h1>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
+          <div class="absolute top-[12.8rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-6xl heading2">Heading 2</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
+          </div>
+          <div class="absolute top-[20.5rem] xl:top-[21rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-6xl heading3">Heading 3</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
+          </div>
+          <div class="absolute top-[28.7rem] xl:top-[29.3rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-6xl heading4">Heading 4</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
           </div>
         </div>
-        <div class="hidden md:flex md:justify-center md:items-center">
-          <img src="../assets/computer.png" alt="" />
+        <div class="absolute xl:relative mb-[10rem] w-[90vw] xl:w-[30vw]">
+          <img
+            class="mt-5 h-[30rem] w-auto relative hidden xl:block"
+            src="../assets/ladder.png"
+            alt=""
+          />
+          <div class="absolute top-[36rem] left-[6rem] xl:top-[4.5rem]">
+            <h1 class="text-4xl xl:text-6xl heading1">Heading 5</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
+          </div>
+          <div class="absolute top-[44rem] left-[6rem] xl:top-[12.8rem]">
+            <h1 class="text-4xl xl:text-6xl heading2">Heading 6</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
+          </div>
+          <div class="absolute top-[51.5rem] xl:top-[21rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-6xl heading3">Heading 7</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
+          </div>
+          <div class="absolute top-[59.5rem] xl:top-[29.3rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-6xl heading4">Heading 8</h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              modi beatae tempore ex eum.
+            </p>
+          </div>
         </div>
       </div>
-      <!-- Tracks -->
-      <div class="mt-10">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
+    </div>
+    <!-- Tracks -->
+    <div class="mt-10 mx-5 md:mx-10">
+      <div class="">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
           $ ls -a <span class="text-white">TRACKS</span>
         </h1>
       </div>
@@ -293,19 +350,27 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-between mx-5 md:mx-10 mt-5 md:mt-10">
-      <div class="hidden md:flex md:justify-center md:items-center">
+    <div class="mx-5 md:mx-10 mt-5 md:mt-10">
+      <div class="hidden md:justify-center md:items-center">
         <img
           class="h-[8rem] md:h-[20rem]"
-          src="../assets/left.png"
+          src="../assets/flyingComputer.gif"
           alt="shape pattern"
         />
       </div>
       <div class="prize">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
           $ vi <span class="text-white">PRIZE</span>.yml
         </h1>
-        <div class="text-white text-[1.4rem] md:text-3xl mt-5">
+        <div class="mt-5">
+          <h1 class="text-3xl text-[#9E9E9E]">
+            > COMING
+
+            <span class="text-[red]">SOON</span>
+          </h1>
+        </div>
+
+        <div class="text-white text-[1.4rem] md:text-3xl mt-5 hidden">
           <h2>
             &nbsp;1 <span class="text-[#CD3838]">Overall:</span> <br />
             &nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
@@ -325,22 +390,22 @@
           </h2>
         </div>
       </div>
-      <div class="md:flex justify-center items-center hidden">
-        <img
-          class="h-[10rem] md:h-[20rem]"
-          src="../assets/right.png"
-          alt="shape pattern"
-        />
-      </div>
     </div>
     <!-- Sponsors -->
-    <div class="sponsors mx-5 md:mx-10 mt-10">
+    <div class="sponsors mx-5 md:mx-10 my-10">
       <div class="headline">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-5xl">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
           $ tar -xvzf <span class="text-white"> SPONSORS</span>.tar.gz
         </h1>
       </div>
-      <div class="images flex flex-col gap-5 md:gap-10 mt-5 md:mx-16">
+      <div class="mt-5">
+        <h1 class="text-3xl text-[#9E9E9E]">
+          > COMING
+
+          <span class="text-[red]">SOON</span>
+        </h1>
+      </div>
+      <div class="images flex-col gap-5 md:gap-10 mt-5 md:mx-16 hidden">
         <img
           class="sponsorelement"
           src="../assets/images/tier1.png"
@@ -403,56 +468,58 @@
 
     <!-- Footer -->
     <div
-      class="footer flex flex-col md:gap-5  mx-5 mt-10 md:flex-row  md:justify-between md:mx-20"
+      class="bg-[url('/assets/footer.png')] bg-cover h-[50vh] xl:h-[30vh] footer px-5 xl:px-10"
     >
-      <div class="resources footerelements">
-        <h1 class="footerheading text-2xl md:text-4xl">RESOURCES</h1>
-        <p
-          class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#9E9E9E]"
-        >
-          Sponsorship Brochure
-        </p>
-      </div>
-      <div class="address footerelements mx-10">
-        <h1
-          class="footerheading text-2xl md:text-4xl md:mt-0"
-        >
-          ADDRESS
-        </h1>
-        <p
-          class="footercontent text-xl md:text-2xl addresscontent text-[#9E9E9E]"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p class="text-xl md:text-2xl addresscontent text-[#9E9E9E]">second line</p>
-      </div>
-      <div class="social ">
-        <h1 class="footerheading footerelements text-2xl md:text-4xl">
-          STAY CONNECTED
-        </h1>
-        <div class="flex  justify-start md:justify-between gap-7 md:gap-5 ">
-          <img
-            class="sociallogos insta_logo"
-            src="../assets/images/insta_logo.png"
-            alt="insta_logo"
-          />
-          <img
-            class="twitter_logo sociallogos"
-            src="../assets/images/twitter_logo.png"
-            alt="twitter_logo"
-          />
-          <img
-            class="sociallogos linkedin_logo"
-            src="../assets/images/linkedin_logo.png"
-            alt="linkedin_logo"
-          />
+    <div class=" flex flex-col  justify-center h-[100%] gap-5">
+      <div class="flex flex-col xl:flex-row justify-between gap-5">
+        <div class="resources footerelements">
+          <h1 class="footerheading text-2xl md:text-4xl">RESOURCES</h1>
+          <p
+            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#9E9E9E]"
+          >
+            Sponsorship Brochure
+          </p>
+        </div>
+        <div class="address footerelements">
+          <h1 class="footerheading text-2xl md:text-4xl md:mt-0">ADDRESS</h1>
+          <p
+            class="footercontent text-xl md:text-2xl addresscontent text-[#9E9E9E]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="text-xl md:text-2xl addresscontent text-[#9E9E9E]">
+            second line
+          </p>
+        </div>
+        <div class="social">
+          <h1 class="footerheading footerelements text-2xl md:text-4xl">
+            STAY CONNECTED
+          </h1>
+          <div class="flex justify-start xl:justify-between gap-7 md:gap-5">
+            <img
+              class="sociallogos insta_logo"
+              src="../assets/images/insta_logo.png"
+              alt="insta_logo"
+            />
+            <img
+              class="twitter_logo sociallogos"
+              src="../assets/images/twitter_logo.png"
+              alt="twitter_logo"
+            />
+            <img
+              class="sociallogos linkedin_logo"
+              src="../assets/images/linkedin_logo.png"
+              alt="linkedin_logo"
+            />
+          </div>
         </div>
       </div>
+      <div class="copyright flex items-center justify-center  text-xl xl:text-2xl mx-5">
+        <h1>© 2023 Tech Club IIIT Kalyani</h1>
       </div>
-    </div>
-    <div class="copyright text-center pb-10 text-xl mt-5">
-      © 2023 Tech Club IIIT Kalyani
+     </div>
+
     </div>
     
     <script src="./index.js"></script>
