@@ -47,32 +47,33 @@
     }, 0);
 })();
 
+//status_code_0 animation
 new TypeIt("#element", { 
   lifeLike: false, 
   speed: 0 
 })
 .type("s")
-.pause(168)
+.pause(135)
 .type("t")
-.pause(181)
+.pause(141)
 .type("a")
 .pause(138)
 .type("t")
-.pause(189)
+.pause(102)
 .type("y")
 .pause(84)
 .type("s")
-.pause(1282)
+.pause(300)
 .delete(1)
-.pause(203)
+.pause(187)
 .delete(1)
-.pause(1151)
+.pause(357)
 .type("u")
 .pause(69)
 .type("s")
-.pause(786)
+.pause(243)
 .type("_")
-.pause(469)
+.pause(298)
 .type("c")
 .pause(133)
 .type("o")
@@ -90,7 +91,7 @@ new TypeIt("#element", {
 .move(null, { to: "END" })
 .pause(192)
 .delete(1)
-.pause(729)
+.pause(329)
 .type("e")
 .pause(501)
 .type("_")
@@ -98,22 +99,18 @@ new TypeIt("#element", {
 .type("0")
 .go();
 
-var collapsible = document.getElementsByClassName("faq-collapsible");
-var i;
+// var collapsible = document.getElementsByClassName("faq-collapsible");
 
-for (i = 0; i < collapsible.length; i++) {
-  collapsible[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    console.log('hello');
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-      console.log('is it woking?');
-    } else {
-      content.style.maxHeight = content.scrollHeight + "em";
-      console.log('hmm');
-    }
-  });
+// for (var i = 0; i < collapsible.length; i++) {
+//   collapsible[i].onclick = function () {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.maxHeight) {
+//       content.style.maxHeight = null;
+//     } else {
+//       content.style.maxHeight = content.scrollHeight + "em";
+//     }
+//   };
 
   
-}
+// }
