@@ -637,20 +637,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mb-\[10rem\] {
-  margin-bottom: 10rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-\[10rem\] {
+  margin-bottom: 10rem;
 }
 
 .ml-7 {
@@ -659,6 +651,14 @@ video {
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-9 {
@@ -675,6 +675,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .h-\[100\%\] {
@@ -695,10 +699,6 @@ video {
 
 .h-\[8rem\] {
   height: 8rem;
-}
-
-.h-3 {
-  height: 0.75rem;
 }
 
 .w-\[90vw\] {
@@ -822,16 +822,16 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pl-7 {
-  padding-left: 1.75rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
 
 .pl-12 {
   padding-left: 3rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .pr-2 {
@@ -879,6 +879,11 @@ video {
   letter-spacing: 0.05em;
 }
 
+.text-\[\#169B81\] {
+  --tw-text-opacity: 1;
+  color: rgb(22 155 129 / var(--tw-text-opacity));
+}
+
 .text-\[\#9E9E9E\] {
   --tw-text-opacity: 1;
   color: rgb(158 158 158 / var(--tw-text-opacity));
@@ -899,29 +904,14 @@ video {
   color: rgb(205 56 56 / var(--tw-text-opacity));
 }
 
-.text-\[\#D9D9D9\] {
-  --tw-text-opacity: 1;
-  color: rgb(217 217 217 / var(--tw-text-opacity));
-}
-
-.text-\[red\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#169B81\] {
-  --tw-text-opacity: 1;
-  color: rgb(22 155 129 / var(--tw-text-opacity));
-}
-
 .text-\[\#D6D6D6\] {
   --tw-text-opacity: 1;
   color: rgb(214 214 214 / var(--tw-text-opacity));
+}
+
+.text-\[\#D9D9D9\] {
+  --tw-text-opacity: 1;
+  color: rgb(217 217 217 / var(--tw-text-opacity));
 }
 
 .text-\[\#E5B567\] {
@@ -932,6 +922,16 @@ video {
 .text-\[\#E87D3E\] {
   --tw-text-opacity: 1;
   color: rgb(232 125 62 / var(--tw-text-opacity));
+}
+
+.text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1362,6 +1362,16 @@ body {
     line-height: 2rem;
   }
 
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1375,16 +1385,6 @@ body {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .xl\:opacity-100 {
