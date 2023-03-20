@@ -95,20 +95,3 @@ new TypeIt("#element", {
 .pause(956)
 .type("0")
 .go();
-
-// var collapsible = document.getElementsByClassName("faq-collapsible");
-
-// for (var i = 0; i < collapsible.length; i++) {
-//   collapsible[i].onclick = function () {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.maxHeight) {
-//       content.style.maxHeight = null;
-//     } else {
-//       content.style.maxHeight = content.scrollHeight + "em";
-//     }
-//   };
-
-  
-// }
-
