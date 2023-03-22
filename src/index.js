@@ -96,6 +96,7 @@ new TypeIt("#element", {
 .type("0")
 .go();
 
+
 // var collapsible = document.getElementsByClassName("faq-collapsible");
 
 // for (var i = 0; i < collapsible.length; i++) {
@@ -132,3 +133,4 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
